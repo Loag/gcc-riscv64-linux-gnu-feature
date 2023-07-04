@@ -14,5 +14,5 @@ jobs:
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
-      - name: "Test cmake install"
+      - name: "Test gcc-riscv64-linux-gnu install"
         run: devcontainer features test --skip-scenarios -f gcc-riscv64-linux-gnu -i ubuntu .
