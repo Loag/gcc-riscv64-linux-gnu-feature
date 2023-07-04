@@ -1,0 +1,12 @@
+{
+  "id": "gcc-riscv64-linux-gnu",
+  "version": "0.0.1",
+  "name": "gcc-riscv64-linux-gnu",
+  "documentationURL": "https://github.com/loag/gcc-riscv64-linux-gnu-feature",
+  "description": "Installs gcc-riscv64-linux-gnu compiler with apt",
+  "options": {},
+  "mounts": [],
+  "installsAfter": [
+      "ghcr.io/devcontainers/features/common-utils"
+  ]
+}

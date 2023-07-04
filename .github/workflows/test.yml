@@ -1,0 +1,18 @@
+name: "Test gcc-riscv64-linux-gnu install"
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  test-feature:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Install latest devcontainer CLI"
+        run: npm install -g @devcontainers/cli
+
+      - name: "Test cmake install"
+        run: devcontainer features test --skip-scenarios -f gcc-riscv64-linux-gnu -i ubuntu .
